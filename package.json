@@ -2,8 +2,13 @@
   "name": "rhds-theme",
   "version": "1.0.0",
   "description": "RHDS theme for Patternfly components",
-  "main": "index.js",
+  "main": "dist/output.css",
+  "files": [
+    "dist",
+    "input.scss"
+  ],
   "scripts": {
+    "build": "sass input.scss dist/output.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
