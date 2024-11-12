@@ -8,7 +8,7 @@
     "input.scss"
   ],
   "scripts": {
-    "build": "sass input.scss dist/output.css",
+    "build": "sass src/index.scss dist/rhds-theme.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
