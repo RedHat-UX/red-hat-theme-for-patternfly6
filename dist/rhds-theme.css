@@ -741,4 +741,15 @@
   --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
 }
 
+.pf-v6-c-card {
+  --pf-v6-c-card--BorderRadius: var(--rh-border-radius-default, 3px);
+}
+
+.pf-v6-c-form-control {
+  --pf-v6-c-form-control--BorderRadius: var(--rh-border-radius-sharp, 0.0px);
+  --pf-v6-c-form-control--before--BorderStyle: none;
+  border: 1px solid;
+  border-color: #f0f0f0 #f0f0f0 #8a8d90 #f0f0f0;
+}
+
 /*# sourceMappingURL=rhds-theme.css.map */

@@ -1,6 +1,6 @@
 {
   "name": "rhds-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "RHDS theme for Patternfly components",
   "main": "dist/output.css",
   "files": [
