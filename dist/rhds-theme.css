@@ -737,7 +737,6 @@
 }
 
 .pf-v6-c-button {
-  --pf-v6-c-button--m-primary--BackgroundColor: var(--rh-color-accent-brand-on-dark, #ee0000);
   --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
 }
 
@@ -748,6 +747,13 @@
 .pf-v6-c-form-control {
   --pf-v6-c-form-control--BorderRadius: var(--rh-border-radius-sharp, 0.0px);
   --pf-v6-c-form-control--before--BorderStyle: none;
+  border: 1px solid;
+  border-color: #f0f0f0 #f0f0f0 #8a8d90 #f0f0f0;
+}
+
+.pf-v6-c-menu-toggle {
+  --pf-v6-c-menu-toggle--BorderRadius: var(--rh-border-radius-sharp, 0.0px);
+  --pf-v6-c-menu-toggle--BorderColor: transparent;
   border: 1px solid;
   border-color: #f0f0f0 #f0f0f0 #8a8d90 #f0f0f0;
 }
