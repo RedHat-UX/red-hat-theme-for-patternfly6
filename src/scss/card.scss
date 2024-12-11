@@ -1,0 +1,5 @@
+@use './mixins.scss' as *;
+
+.pf-v6-c-card {
+  @include border-radius(v6, card, var(--rh-border-radius-default, 3px));
+}
