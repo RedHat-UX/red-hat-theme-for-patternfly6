@@ -1,1 +1,1 @@
-export declare function setVersion(arg: string): void;
+export declare function setVersion(version: string): void;

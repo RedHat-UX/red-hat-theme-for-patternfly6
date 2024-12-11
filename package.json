@@ -1,15 +1,15 @@
 {
   "name": "rhds-theme",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "RHDS theme for Patternfly components",
-  "main": "dist/index.js",        
-  "types": "dist/index.d.ts",     
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist",                      
+    "dist",
     "README.md"
   ],
   "scripts": {
-    "build": "sass src/index.scss dist/rhds-theme.css && tsc", 
+    "build": "sass src/index.scss dist/rhds-theme.css && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,7 +32,8 @@
     "@rhds/tokens": "^2.1.0"
   },
   "devDependencies": {
-    "typescript": "^4.5.0",   
-    "sass": "^1.32.8"           
+    "@types/node": "^22.10.2",
+    "sass": "^1.32.8",
+    "typescript": "^4.5.0"
   }
 }

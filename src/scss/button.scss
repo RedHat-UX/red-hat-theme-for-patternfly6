@@ -1,6 +1,7 @@
 @use './mixins.scss' as *;
+@use './variables.scss' as *;
 
 .pf-v6-c-button {
-  border-width: var(--version);
-  @include border-radius(v6, button, var(--rh-border-radius-default, 3px));
+  //border-width: var(--version);
+  @include border-radius($pfVersion, button, var(--rh-border-radius-default, 3px));
 }
