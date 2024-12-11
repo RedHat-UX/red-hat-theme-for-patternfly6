@@ -1,1 +1,2 @@
-# rhds-theme
+# Red Hat Design System Theme
+
