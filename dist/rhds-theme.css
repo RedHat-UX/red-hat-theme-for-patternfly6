@@ -737,6 +737,7 @@
 }
 
 .pf-v6-c-button {
+  border-width: var(--version);
   --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
 }
 
