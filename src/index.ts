@@ -5,8 +5,8 @@
 //     root.style.setProperty('--version', 10);
 // }
 
-exports.setVersion =  function (arg) {
+export function setVersion(arg: string): void {
     const root = document.documentElement;
     console.log("------- the argument value is", arg);
-    root.style.setProperty('--version', 10);
-}
+    root.style.setProperty('--version', '10');
+  }

@@ -1,9 +1,12 @@
 {
-    "compilerOptions": {
-      "declaration": true,        // Generate declaration files
-      "declarationMap": true,     // (optional) Generate .d.ts.map files for debugging
-      "outDir": "dist",           // Output to dist directory
-      "moduleResolution": "node", // Ensure correct module resolution
-      "esModuleInterop": true     // Allow importing ES6 modules
-    }
-  }
+  "compilerOptions": {
+    "outDir": "dist",           // Output directory for compiled files
+    "declaration": true,        // Generate declaration files (.d.ts)
+    "target": "ES5",            // Target ES5 for compatibility
+    "module": "CommonJS",       // Use CommonJS module system
+    "moduleResolution": "node", // Resolve modules in Node style
+    "strict": true              // Enable all strict type-checking options
+  },
+  "include": ["src/**/*.ts"],   // Include TypeScript files in the src folder
+  "exclude": ["node_modules"]   // Exclude node_modules
+}
