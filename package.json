@@ -1,14 +1,14 @@
 {
   "name": "rhds-theme",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "RHDS theme for Patternfly components",
-  "main": "dist/output.css",
+  "main": "dist/rhds-theme.css",
   "files": [
     "dist",
-    "input.scss"
+    "index.js"
   ],
   "scripts": {
-    "build": "sass src/index.scss dist/rhds-theme.css && node src/index.js",
+    "build": "sass src/index.scss dist/rhds-theme.css && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
