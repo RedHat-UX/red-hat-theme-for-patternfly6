@@ -752,7 +752,6 @@
 }
 
 .pf-v6-c-menu-toggle {
-  --pf-v6-c-menu-toggle--BorderRadius: var(--rh-border-radius-sharp, 0.0px);
   --pf-v6-c-menu-toggle--BorderRadius: var(--rh-border-radius-sharp, 0px);
   --pf-v6-c-menu-toggle--BorderColor: transparent;
   border: 1px solid;
