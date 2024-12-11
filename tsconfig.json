@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "declaration": true,        // Generate declaration files
+      "declarationMap": true,     // (optional) Generate .d.ts.map files for debugging
+      "outDir": "dist",           // Output to dist directory
+      "moduleResolution": "node", // Ensure correct module resolution
+      "esModuleInterop": true     // Allow importing ES6 modules
+    }
+  }
