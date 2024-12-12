@@ -29,5 +29,8 @@
   "homepage": "https://github.com/Arathy-s/rhds-theme#readme",
   "dependencies": {
     "@rhds/tokens": "^2.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.82.0"
   }
 }

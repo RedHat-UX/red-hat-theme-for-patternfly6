@@ -759,4 +759,20 @@
   border-color: #f0f0f0 #f0f0f0 #8a8d90 #f0f0f0;
 }
 
+.pf-v6-c-banner {
+  --pf-v5-c-banner--BackgroundColor: #4f5255;
+}
+
+.pf-m-red {
+  --pf-v6-c-banner--m-red--BackgroundColor: #c9190b;
+}
+
+.pf-m-blue {
+  --pf-v6-c-banner--m-blue--BackgroundColor: #7dc3e8;
+}
+
+.pf-m-green {
+  --pf-v6-c-banner--m-green--BackgroundColor: #3e8635;
+}
+
 /*# sourceMappingURL=rhds-theme.css.map */
