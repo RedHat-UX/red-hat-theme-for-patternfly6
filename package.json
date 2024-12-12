@@ -30,6 +30,10 @@
   "dependencies": {
     "@rhds/tokens": "^2.1.0"
   },
+  "contributors": [
+    "Arathy Kumar (https://github.com/ArathyKumar)",
+    "Ayushi Midha (https://github.com/AyushiMidha)"
+  ],
   "devDependencies": {
     "sass": "^1.82.0"
   }
