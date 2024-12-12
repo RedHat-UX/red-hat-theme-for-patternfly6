@@ -1,23 +1,23 @@
-# Red Hat Design System Theme
+# Red Hat Brand Theme
 
-The Red Hat Design System Theme is an ongoing initiative to adapt and standardize the CSS styles of components from [PatternFly](https://www.patternfly.org/) and [PatternFly Elements](https://patternflyelements.org/) to align with the Red Hat Design System. This initiative ensures design and user experience consistency across Red Hat’s digital products, in full alignment with the standards and guidelines established in the [Red Hat Design System](https://ux.redhat.com/).
+The Red Hat Brand Theme is an ongoing initiative to adapt and standardize the CSS styles of components from [PatternFly](https://www.patternfly.org/) and [PatternFly Elements](https://patternflyelements.org/) to align with the Red Hat Design System. This initiative ensures design and user experience consistency across Red Hat’s digital products, in full alignment with the standards and guidelines established in the [Red Hat Design System](https://ux.redhat.com/).
 
 ## Usage
 
-To integrate the Red Hat Design System (RHDS) theme into your project, follow the steps below:
+To integrate the Red Hat Brand theme into your project, follow the steps below:
 
-### Install the RHDS Theme
-Run the following command to install the rhds-theme package via npm:
+### Install the Red Hat Brand Theme
+Run the following command to install the redhat-brand-theme package via npm:
 
 ```
-npm install rhds-theme
+npm install redhat-brand-theme
 ```
 
-### Import the RHDS CSS
+### Import the Red Hat Brand Theme CSS
 In your main application file (e.g., index.js or App.js), import the RHDS theme CSS. Ensure that the RHDS theme has precedence over other framework styles by placing the import statement at the appropriate location:
 
 ```
-import 'rhds-theme/dist/rhds-theme.css';  // Import RHDS theme
+import 'redhat-brand-theme/dist/redhat-brand-theme.css';  // Import RHDS theme
 ```
 
 It is recommended to place this import after any other CSS imports to ensure that the RHDS theme styles take priority over framework-specific styles.
