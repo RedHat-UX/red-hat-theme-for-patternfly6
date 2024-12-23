@@ -782,10 +782,12 @@
   border-left: 3px solid var(--rh-color-accent-brand-on-light, #ee0000);
 }
 
-.pf-v6-c-accordion__item.pf-m-expanded {
+.pf-v6-c-accordion__item {
   -pf-t--global--background--color--600: var(--rh-color-surface-lightest, #ffffff);
   --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0);
   --pf-t--global--background--color--action--plain--default: var(--rh-color-surface-lightest, #ffffff);
+}
+.pf-v6-c-accordion__item.pf-m-expanded {
   border-left: 3px solid var(--rh-color-accent-brand-on-light, #ee0000);
 }
 
