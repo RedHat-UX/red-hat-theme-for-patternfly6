@@ -1,0 +1,13 @@
+//   ------------ root level override ---------------
+$hint:(
+    // --pf-t--global--border--color--status--info--default: #bee1f4
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-hint {
+    --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
+    border:  var(--rh-border-width-sm) solid #bee1f4; 
+    --pf-v6-c-hint--BackgroundColor: #def3ff;
+    --pf-v6-c-hint--BorderRadius: 0px;
+    box-shadow: 0 0.0625rem 0.125rem 0 rgba(3, 3, 3, 0.12), 0 0 0.125rem 0 rgba(3, 3, 3, 0.06);
+}

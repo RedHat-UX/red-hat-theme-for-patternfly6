@@ -8,6 +8,7 @@
 @use './scss/dragndrop-override.scss' as drag-and-drop;
 @use './scss/dual-list-selector-override.scss' as dual-list-selector;
 @use './scss/form-control-override.scss' as form-control;
+@use './scss/hint-override.scss' as hint;
 
 
 $root-variables: banner.$banner, button.$button, multiple-file-upload.$multiple-file-upload, divider.$divider, dual-list-selector.$dual-list-selector, form-control.$form-control;
