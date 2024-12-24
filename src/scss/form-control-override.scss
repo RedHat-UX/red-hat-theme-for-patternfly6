@@ -1,0 +1,40 @@
+//   ------------ root level override ---------------
+$form-control:(
+    --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0px)
+);
+
+//   ------------ component level override ---------------
+$form-control-varaint-map: (
+    "error": --rh-color-border-status-danger-on-light,
+    "expanded": --rh-color-accent-base-on-light,
+    "success": --rh-color-border-status-success-on-light,
+    "warning": --rh-color-border-status-warning-on-light
+);
+
+.pf-v6-c-form-control{
+    --pf-v6-c-form-control--BorderRadius: var(--rh-border-radius-sharp, 0px);
+    --pf-v6-c-form-control--after--BorderStyle: none;
+    --pf-v6-c-form-control--before--BorderStyle: none;
+    border: var(--rh-border-width-sm) solid;
+    border-color: #f0f0f0 #f0f0f0 #8a8d90 #f0f0f0;
+    &:hover{
+        border-bottom-color: var(--rh-color-accent-base-on-light);
+    }
+}
+
+.pf-v6-c-form-control.pf-m-readonly{
+    --pf-v6-c-form-control--BackgroundColor: #f0f0f0;
+}
+
+@mixin add-form-control-variant($form-control-variant, $rh-value){
+    .pf-v6-c-form-control{
+        &.pf-m-#{$form-control-variant}{
+            border-bottom: var(--rh-border-width-md) solid var(#{$rh-value});
+        }
+    }
+}
+
+ // Iterate over the map to generate classes
+ @each $form-control-variant, $rh-value in $form-control-varaint-map {
+    @include add-form-control-variant($form-control-variant, $rh-value);
+  }
