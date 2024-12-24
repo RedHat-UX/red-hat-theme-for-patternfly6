@@ -1,0 +1,9 @@
+//   ------------ root level override ---------------
+$divider:(
+    --pf-t--global--border--color--100: #d2d2d2
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-divider{
+    --pf-v6-c-divider--Color: #d2d2d2;
+}

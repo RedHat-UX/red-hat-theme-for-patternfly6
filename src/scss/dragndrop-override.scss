@@ -1,0 +1,8 @@
+
+//   ------------ root level override ---------------
+
+//   ------------ component level override ---------------
+.pf-v6-c-draggable{
+    --pf-v6-c-draggable--m-dragging--after--BorderRadius: var(--rh-border-radius-sharp, 0px);
+    --pf-v6-c-droppable--m-dragging--after--BorderRadius: var(--rh-border-radius-sharp, 0px);
+}

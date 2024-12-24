@@ -1,0 +1,9 @@
+//   ------------ root level override ---------------
+$button:(
+    --pf-t--global--border--radius--500: var(--rh-border-radius-default, 3px)
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-button {
+    --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
+}

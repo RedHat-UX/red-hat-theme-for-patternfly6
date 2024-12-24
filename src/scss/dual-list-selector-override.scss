@@ -1,0 +1,9 @@
+//   ------------ root level override ---------------
+$dual-list-selector:(
+    --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0px)
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-dual-list-selector{
+    --pf-v6-c-dual-list-selector__menu--BorderRadius: var(--rh-border-radius-sharp, 0px);
+} 

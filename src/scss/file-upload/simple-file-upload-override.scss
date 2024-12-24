@@ -1,0 +1,25 @@
+//   ------------ root level override ---------------
+$simple-file-upload:(
+  //--pf-t--global--spacer--200:0px
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-file-upload{
+  --pf-v6-c-file-upload--RowGap: 0px;
+  .pf-v6-c-input-group{
+    --pf-v6-c-input-group--Gap: 0px;
+    .pf-v6-c-input-group__item{
+      --pf-v6-c-input-group__item--AlignItems: normal;
+      .pf-v6-c-button.pf-m-control{
+        --pf-v6-c-button--m-control--BorderColor: #f0f0f0;
+        border-bottom: var(--rh-border-width-sm) solid #8a8d90;
+      }
+      .pf-v6-c-button:disabled, .pf-v6-c-button.pf-m-disabled, .pf-v6-c-button.pf-m-aria-disabled {
+          --pf-v6-c-button--disabled--Color: #6a6e73;
+          --pf-v6-c-button--disabled--BackgroundColor: #f0f0f0;
+          border-left: none;
+          border-bottom: var(--rh-border-width-sm) solid #f0f0f0;
+      }
+    }
+  }
+}
