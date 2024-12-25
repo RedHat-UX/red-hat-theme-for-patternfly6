@@ -736,6 +736,10 @@
   --rh-space-7xl: 128px;
 }
 
+.pf-v6-c-card {
+  --pf-t--global--border--radius--300: var(--rh-border-radius-sharp, 3px);
+}
+
 .pf-v6-c-banner {
   --pf-v6-c-banner--BackgroundColor: #4f5255;
 }
@@ -849,6 +853,10 @@
   --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0);
   --pf-t--global--background--color--action--plain--default: var(--rh-color-surface-lightest, #ffffff);
   border-left: 3px solid var(--rh-color-accent-brand-on-light, #ee0000);
+}
+
+.pf-v6-c-button:hover, .pf-v6-c-button:focus {
+  --pf-t--global--background--color--600: transparent;
 }
 
 :root {

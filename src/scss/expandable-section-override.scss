@@ -1,3 +1,7 @@
 $expandable-section: (
         --pf-t--global--background--color--600: transparent
-)
+);
+
+.pf-v6-c-button:hover, .pf-v6-c-button:focus {
+  --pf-t--global--background--color--600: transparent;
+}
