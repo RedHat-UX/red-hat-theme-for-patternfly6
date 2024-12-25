@@ -1,4 +1,5 @@
 @use '../node_modules/@rhds/tokens/css/global.css';
+@use './scss/button';
 @use './scss/card';
 @use './scss/banner-override.scss' as banner;
 @use './scss/button-override.scss' as button;
@@ -8,9 +9,11 @@
 @use './scss/dragndrop-override.scss' as drag-and-drop;
 @use './scss/dual-list-selector-override.scss' as dual-list-selector;
 @use './scss/form-control-override.scss' as form-control;
+@use './scss/alert-override.scss' as alert;
+@use './scss/accordion-override.scss' as accordion;
 
 
-$root-variables: banner.$banner, button.$button, multiple-file-upload.$multiple-file-upload, divider.$divider, dual-list-selector.$dual-list-selector, form-control.$form-control;
+$root-variables: banner.$banner, button.$button, multiple-file-upload.$multiple-file-upload, divider.$divider, dual-list-selector.$dual-list-selector, form-control.$form-control, alert.$alert, accordion.$accordion;
 
 :root {
     // Loop through all the variables and inject them into the :root selector
