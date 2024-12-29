@@ -737,7 +737,7 @@
 }
 
 .pf-v6-c-card {
-  --pf-v6-c-card--BorderRadius: var(--rh-border-radius-default, 3px);
+  --pf-v6-c-card--BorderRadius: var(--rh-border-radius-sharp, 3px);
 }
 
 .pf-v6-c-banner {
@@ -848,6 +848,24 @@
   border-bottom: var(--rh-border-width-md) solid var(--rh-color-border-status-warning-on-light);
 }
 
+.pf-v6-c-alert {
+  --pf-v6-c-alert--BorderRadius: var(--rh-border-radius-sharp, 0);
+  border-right: var(--rh-border-radius-sharp, 0);
+  border-left: var(--rh-border-radius-sharp, 0);
+  border-bottom: var(--rh-border-radius-sharp, 0);
+}
+
+.pf-v6-c-accordion__item.pf-m-expanded {
+  --pf-v6-c-accordion__item--m-expanded--BackgroundColor: var(--rh-color-surface-lightest, #ffffff);
+  --pf-v6-c-accordion__item--BorderRadius: var(--rh-border-radius-sharp, 0);
+  --pf-v6-c-accordion__toggle--BackgroundColor: var(--rh-color-surface-lightest, #ffffff);
+  border-left: 3px solid var(--rh-color-accent-brand-on-light, #ee0000);
+}
+
+.pf-v6-c-button:hover, .pf-v6-c-button:focus {
+  --pf-v6-c-button--BackgroundColor: transparent;
+}
+
 :root {
   --pf-t--global--text--color--nonstatus--on-gray--default: var(--rh-color-canvas-white);
   --pf-t--global--text--color--nonstatus--on-red--default: var(--rh-color-canvas-white);
@@ -863,6 +881,13 @@
   --pf-t--global--border--color--100: #d2d2d2;
   --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0px);
   --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0px);
+  --pf-t--global--border--radius--medium: var(--rh-border-radius-sharp, 0);
+  --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0);
+  --pf-t--global--background--color--600: var(--rh-color-surface-lightest, #ffffff);
+  --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0);
+  --pf-t--global--background--color--action--plain--default: var(--rh-color-surface-lightest, #ffffff);
+  --pf-t--global--border--radius--300: var(--rh-border-radius-sharp, 3px);
+  --pf-t--global--background--color--600: transparent;
 }
 
 /*# sourceMappingURL=redhat-brand-theme.css.map */

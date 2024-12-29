@@ -1,0 +1,11 @@
+$alert:(
+  --pf-t--global--border--radius--medium: var(--rh-border-radius-sharp, 0),
+  --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0),
+);
+
+.pf-v6-c-alert{
+  --pf-v6-c-alert--BorderRadius: var(--rh-border-radius-sharp, 0);
+  border-right: var(--rh-border-radius-sharp, 0);
+  border-left: var(--rh-border-radius-sharp, 0);
+  border-bottom: var(--rh-border-radius-sharp, 0);
+}
