@@ -1,0 +1,54 @@
+//   ------------ root level override ---------------
+$label: (
+    // --pf-t--global--border--color--status--info--default: #bee1f4
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-label {
+    --pf-v6-c-label--m-filled__actions--c-button__icon--Color:  #6a6e73;
+}
+
+// Mixin for pf-v6-c-label with customizable color themes
+@mixin pf-v6-c-label($bg-color, $text-color, $icon-color, $border-solid-color) {
+    --pf-v6-c-label--BorderColor: #{$border-solid-color};
+    --pf-v6-c-label--BackgroundColor: #{$bg-color};
+    --pf-v6-c-label--Color: #{$text-color};
+    --pf-v6-c-label__icon--Color: #{$icon-color};
+    border: 1px solid #{$border-solid-color};
+}
+
+.pf-v6-c-label {
+    @include pf-v6-c-label(#f5f5f5, #151515, #151515, #d2d2d2);
+}
+
+.pf-v6-c-label.pf-m-blue {
+    @include pf-v6-c-label(#def3ff, #002952, #0066cc, #bee1f4);
+}
+
+.pf-v6-c-label.pf-m-green {
+    @include pf-v6-c-label(#f3faf2, #1e4f18, #3e8635, #bde5b8);
+}
+
+.pf-v6-c-label.pf-m-orange {
+    @include pf-v6-c-label(#fff6ec, #3b1f00, #ec7a08, #f4b678);
+}
+
+.pf-v6-c-label.pf-m-red {
+    @include pf-v6-c-label(#faeae8, #7d1007, #c9190b, #c9190b);
+}
+
+.pf-v6-c-label.pf-m-teal {
+    @include pf-v6-c-label(#f2f9f9, #003737, #009596, #a2d9d9);
+}
+
+.pf-v6-c-label.pf-m-purple {
+    @include pf-v6-c-label(#f2f0fc, #1f0066, #6753ac, #cbc1ff);
+}
+
+.pf-v6-c-label.pf-m-yellow {
+    @include pf-v6-c-label(#fdf7e7, #3d2c00, #f0ab00, #f9e0a2);
+}
+
+.pf-v6-c-label.pf-m-disabled {
+    @include pf-v6-c-label(#d2d2d2, #6a6e73, #6a6e73, transparent);
+}
