@@ -848,6 +848,10 @@
   border-bottom: var(--rh-border-width-md) solid var(--rh-color-border-status-warning-on-light);
 }
 
+.pf-v6-c-modal-box {
+  --pf-v6-c-modal-box--BorderRadius: var(--rh-border-radius-sharp, 0px);
+}
+
 :root {
   --pf-t--global--text--color--nonstatus--on-gray--default: var(--rh-color-canvas-white);
   --pf-t--global--text--color--nonstatus--on-red--default: var(--rh-color-canvas-white);
@@ -863,6 +867,7 @@
   --pf-t--global--border--color--100: #d2d2d2;
   --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0px);
   --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0px);
+  --pf-t--global--border--radius--400: var(--rh-border-radius-default, 0px);
 }
 
 /*# sourceMappingURL=redhat-brand-theme.css.map */
