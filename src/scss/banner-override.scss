@@ -1,19 +1,43 @@
 //   ------------ root level override ---------------
 $banner: (
-  --pf-t--global--text--color--nonstatus--on-gray--default: var(--rh-color-canvas-white),
-  --pf-t--global--text--color--nonstatus--on-red--default: var(--rh-color-canvas-white),
-  --pf-t--global--text--color--nonstatus--on-green--default: var(--rh-color-canvas-white),
-  --pf-t--global--text--color--status--on-info--default: var(--rh-color-black),
-  --pf-t--global--color--nonstatus--gray--100: #4f5255,
-  --pf-t--global--color--nonstatus--blue--100: #7dc3e8,
-  --pf-t--global--color--nonstatus--red--100: #c9190b,
-  --pf-t--global--color--nonstatus--green--100: #3e8635,
-  --pf-t--global--color--nonstatus--yellow--100: #f0ab00,
+  // Comment the root color override as its affecting the label component
+  // --pf-t--global--text--color--nonstatus--on-gray--default: var(--rh-color-canvas-white),
+  // --pf-t--global--text--color--nonstatus--on-red--default: var(--rh-color-canvas-white),
+  // --pf-t--global--text--color--nonstatus--on-green--default: var(--rh-color-canvas-white),
+  // --pf-t--global--text--color--status--on-info--default: var(--rh-color-black),
+  // --pf-t--global--color--nonstatus--gray--100: #4f5255,
+  // --pf-t--global--color--nonstatus--blue--100: #7dc3e8,
+  // --pf-t--global--color--nonstatus--red--100: #c9190b,
+  // --pf-t--global--color--nonstatus--green--100: #3e8635,
+  // --pf-t--global--color--nonstatus--yellow--100: #f0ab00,
 );
 
 //   ------------ component level override ---------------
 .pf-v6-c-banner {
   --pf-v6-c-banner--BackgroundColor: #4f5255;
+
+  //---------------------------
+  // --pf-t--global--color--nonstatus--gray--100: #4f5255,
+  // --pf-t--global--color--nonstatus--blue--100: #7dc3e8,
+  // If the global variable is changed inside a class, it will be changed inside the scope of the 
+  // class only and we have to use it inside the class to get its effect
+  // Eg:
+  //
+  // * Define the CSS variable globally in :root */
+  // :root {
+  //   --primary-color: blue;
+  // }
+
+  // /* Change the value of --primary-color inside a specific class */
+  // .container {
+  //   --primary-color: red; /* Override the global value */
+  //   background-color: var(--primary-color); /* Will be red */
+  // }
+
+  // .box {
+  //   background-color: var(--primary-color); /* Will be blue, as it uses the global value */
+  // }
+  //---------------------------
 }
 
 $status-hash-map: (

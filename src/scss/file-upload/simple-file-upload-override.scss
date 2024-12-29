@@ -1,6 +1,6 @@
 //   ------------ root level override ---------------
 $simple-file-upload:(
-  //--pf-t--global--spacer--200:0px
+  //--pf-t--global--spacer--200:0px // Commented as its affecting the label component as well
 );
 
 //   ------------ component level override ---------------

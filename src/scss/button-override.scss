@@ -1,6 +1,6 @@
 //   ------------ root level override ---------------
 $button:(
-    --pf-t--global--border--radius--500: var(--rh-border-radius-default, 3px)
+    /* --pf-t--global--border--radius--500: var(--rh-border-radius-default, 3px);  commented as label component is using the same*/ 
 );
 
 //   ------------ component level override ---------------
