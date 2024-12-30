@@ -1,0 +1,10 @@
+//   ------------ root level override ---------------
+$notification-badge:(
+    // --pf-t--global--border--color--status--info--default: #bee1f4
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-button.pf-m-stateful {
+    --pf-v6-c-button--m-stateful--BorderRadius: var(--rh-border-radius-default, 3px);
+    --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
+}

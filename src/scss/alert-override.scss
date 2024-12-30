@@ -1,6 +1,6 @@
 $alert:(
   --pf-t--global--border--radius--medium: var(--rh-border-radius-sharp, 0),
-  --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0),
+  //--pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0), commented as its overriding notification-badge border radius
 );
 
 .pf-v6-c-alert{

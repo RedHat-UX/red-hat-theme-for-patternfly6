@@ -1,0 +1,27 @@
+//   ------------ root level override ---------------
+$number-input:(
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-number-input {
+	.pf-v6-c-input-group {
+		--pf-v6-c-input-group--Gap: 0px;
+		.pf-v6-c-input-group__item {
+			.pf-v6-c-button {
+				--pf-v6-c-button--m-control--BorderRadius: var(--rh-border-radius-sharp, 0px);
+				--pf-v6-c-button--BorderColor: transparent;
+				border: 1px solid #f0f0f0;
+				border-bottom: 1px solid #8a8d90;
+			}
+			.pf-v6-c-form-control {
+				&.pf-m-readonly {
+					background-color: var(--rh-color-canvas-white, #ffffff);
+					border-top: var(--rh-border-width-sm, 1px) solid #f0f0f0;
+					border-right: none;
+					border-bottom: var(--rh-border-width-sm, 1px) solid #8a8d90;
+					border-left: none;
+				}
+			}
+		}
+	}
+}

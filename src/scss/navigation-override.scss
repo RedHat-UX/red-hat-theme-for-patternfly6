@@ -1,0 +1,30 @@
+//   ------------ root level override ---------------
+$navigation:(
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-nav {
+	--pf-v6-c-nav--BackgroundColor: #212427;
+    --pf-v6-c-nav__link--BorderRadius: var(--rh-border-radius-sharp, 0px);
+}
+
+.pf-v6-c-nav__link {
+	--pf-v6-c-nav__link--m-current--BackgroundColor: #4f5255;
+	--pf-v6-c-nav__link--BackgroundColor: #212427;
+	--pf-v6-c-nav__link--Color: var(--rh-color-canvas-white, #ffffff);
+	--pf-v6-c-nav__link--m-current--Color: var(--rh-color-canvas-white, #ffffff);
+	border-bottom: 0.5px solid #4f5255;
+	margin: 0 var(--rh-space-lg, 16px);
+	position: relative;
+	&.pf-m-current {
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 4px;
+			height: -webkit-fill-available;
+			background-color: #73bcf7;
+		}
+	}
+}

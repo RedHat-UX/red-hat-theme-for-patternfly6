@@ -1,7 +1,7 @@
 $card: (
-        --pf-t--global--border--radius--300:  var(--rh-border-radius-sharp, 3px)
+        --pf-t--global--border--radius--300:  var(--rh-border-radius-default, 3px)
 );
 
 .pf-v6-c-card {
-  --pf-v6-c-card--BorderRadius:  var(--rh-border-radius-sharp, 3px);
+  --pf-v6-c-card--BorderRadius:  var(--rh-border-radius-default, 3px);
 }

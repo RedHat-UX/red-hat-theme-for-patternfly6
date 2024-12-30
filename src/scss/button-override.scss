@@ -6,4 +6,5 @@ $button:(
 //   ------------ component level override ---------------
 .pf-v6-c-button {
     --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
+    //--pf-v6-c-button--m-control--BorderRadius: var(--rh-border-radius-sharp, 0px);
 }
