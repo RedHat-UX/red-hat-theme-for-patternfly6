@@ -1,6 +1,6 @@
 //   ------------ root level override ---------------
 $dual-list-selector:(
-    --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0px)
+   //--pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0), commented as its overriding notification-badge border radius
 );
 
 //   ------------ component level override ---------------

@@ -10,6 +10,9 @@ $simple-file-upload:(
     --pf-v6-c-input-group--Gap: 0px;
     .pf-v6-c-input-group__item{
       --pf-v6-c-input-group__item--AlignItems: normal;
+      .pf-v6-c-button{
+        --pf-v6-c-button--m-control--BorderRadius: var(--rh-border-radius-sharp, 0px);
+      }
       .pf-v6-c-button.pf-m-control{
         --pf-v6-c-button--m-control--BorderColor: #f0f0f0;
         border-bottom: var(--rh-border-width-sm) solid #8a8d90;
@@ -19,6 +22,9 @@ $simple-file-upload:(
           --pf-v6-c-button--disabled--BackgroundColor: #f0f0f0;
           border-left: none;
           border-bottom: var(--rh-border-width-sm) solid #f0f0f0;
+      }
+      .pf-v6-c-form-control.pf-m-readonly{
+          --pf-v6-c-form-control--BackgroundColor: #f0f0f0;
       }
     }
   }

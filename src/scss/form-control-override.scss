@@ -1,6 +1,6 @@
 //   ------------ root level override ---------------
 $form-control:(
-    --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0px)
+   //--pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0), commented as its overriding notification-badge border radius
 );
 
 //   ------------ component level override ---------------
@@ -22,8 +22,8 @@ $form-control-varaint-map: (
     }
 }
 
-.pf-v6-c-form-control.pf-m-readonly{
-    --pf-v6-c-form-control--BackgroundColor: #f0f0f0;
+.pf-v6-c-menu-toggle{
+    --pf-v6-c-menu-toggle--BorderRadius: var(--rh-border-radius-sharp, 0px);
 }
 
 @mixin add-form-control-variant($form-control-variant, $rh-value){
