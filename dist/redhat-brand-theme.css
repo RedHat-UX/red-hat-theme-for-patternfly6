@@ -1010,6 +1010,10 @@
   --pf-v6-c-popover__content--BorderRadius: var(--rh-border-radius-sharp, 0);
 }
 
+.pf-v6-c-skeleton {
+  --pf-v6-c-popover__content--BorderRadius: var(--rh-border-radius-sharp, 0);
+}
+
 :root {
   --pf-t--global--border--radius--300: var(--rh-border-radius-sharp, 0px);
   --pf-t--global--border--color--100: #d2d2d2;
@@ -1020,6 +1024,7 @@
   --pf-t--global--background--color--600: transparent;
   --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0);
   --pf-t--global--border--radius--300: var(--rh-border-radius-sharp, 0);
+  --pf-t--global--spacer--200: var(--rh-border-radius-sharp, 0);
 }
 
 /*# sourceMappingURL=redhat-brand-theme.css.map */

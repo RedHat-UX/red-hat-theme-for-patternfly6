@@ -19,9 +19,10 @@
 @use './scss/number-input-override.scss' as number-input;
 @use './scss/pagination-override.scss' as pagination;
 @use './scss/popover-override.scss' as popover;
+@use './scss/skeleton-override.scss' as skeleton;
 
 
-$root-variables: banner.$banner, button.$button, multiple-file-upload.$multiple-file-upload, divider.$divider, dual-list-selector.$dual-list-selector, form-control.$form-control, alert.$alert, accordion.$accordion, card.$card, expandable-section.$expandable-section, pagination.$pagination, popover.$popover;
+$root-variables: banner.$banner, button.$button, multiple-file-upload.$multiple-file-upload, divider.$divider, dual-list-selector.$dual-list-selector, form-control.$form-control, alert.$alert, accordion.$accordion, card.$card, expandable-section.$expandable-section, pagination.$pagination, popover.$popover, skeleton.$skeleton;
 
 :root {
     // Loop through all the variables and inject them into the :root selector
