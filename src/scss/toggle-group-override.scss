@@ -1,0 +1,7 @@
+//   ------------ component level override ---------------
+.pf-v6-c-toggle-group {
+    --pf-v6-c-toggle-group__item--first-child__button--BorderStartStartRadius: var(--rh-border-radius-default, 3px);
+    --pf-v6-c-toggle-group__item--first-child__button--BorderEndStartRadius: var(--rh-border-radius-default, 3px);
+    --pf-v6-c-toggle-group__item--last-child__button--BorderStartEndRadius: var(--rh-border-radius-default, 3px);
+    --pf-v6-c-toggle-group__item--last-child__button--BorderEndEndRadius: var(--rh-border-radius-default, 3px);
+}

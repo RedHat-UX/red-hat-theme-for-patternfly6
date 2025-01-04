@@ -3,5 +3,5 @@ $expandable-section: (
 );
 
 .pf-v6-c-button:hover, .pf-v6-c-button:focus {
-  --pf-v6-c-button--BackgroundColor: transparent;
+  // --pf-v6-c-button--BackgroundColor: transparent; // Commenting as this style has to be applied inside parent class
 }

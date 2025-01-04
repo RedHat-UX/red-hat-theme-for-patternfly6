@@ -17,6 +17,11 @@
 @use './scss/navigation-override.scss' as naviagtion;
 @use './scss/notification-badge-override.scss' as notification-badge;
 @use './scss/number-input-override.scss' as number-input;
+@use './scss/tootltip-override.scss';
+@use './scss/toggle-group-override.scss';
+@use './scss/timestamp-override.scss';
+@use './scss/textinput-override.scss';
+@use './scss/wizard-override.scss' as wizard;
 
 
 $root-variables: banner.$banner, button.$button, multiple-file-upload.$multiple-file-upload, divider.$divider, dual-list-selector.$dual-list-selector, form-control.$form-control, alert.$alert, accordion.$accordion, card.$card, expandable-section.$expandable-section;

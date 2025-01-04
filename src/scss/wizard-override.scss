@@ -1,0 +1,12 @@
+//   ------------ root level override ---------------
+$wizard: (
+);
+
+//   ------------ component level override ---------------
+.pf-v6-c-wizard__nav-link.pf-m-current {
+    --pf-v6-c-wizard__nav-link--m-current--Color: var(--rh-color-accent-base-on-light, #0066cc);
+}
+
+.pf-v6-c-wizard__footer {
+    --pf-v6-c-wizard__footer--BorderBlockStartColor: transparent;
+}

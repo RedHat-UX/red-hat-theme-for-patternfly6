@@ -1,0 +1,13 @@
+.pf-v6-c-text-input-group {
+    --pf-v6-c-text-input-group__text--BorderRadius--base: var(--rh-border-radius-sharp, 0.0px);
+    --pf-v6-c-text-input-group__text--BorderStartStartRadius: var(--rh-border-radius-sharp, 0.0px);
+    --pf-v6-c-text-input-group__text--BorderStartEndRadius: var(--rh-border-radius-sharp, 0.0px);
+    --pf-v6-c-text-input-group__text--BorderEndEndRadius: var(--rh-border-radius-sharp, 0.0px);
+    --pf-v6-c-text-input-group__text--BorderEndStartRadius: var(--rh-border-radius-sharp, 0.0px);
+    --pf-v6-c-text-input-group__text-input--OutlineOffset: 0px;
+    --pf-v6-c-text-input-group__text-input--BackgroundColor: var(--rh-color-canvas-white, #ffffff);
+    border: 1px solid;
+    border-color: #f0f0f0 #f0f0f0 #8a8d90 #f0f0f0;
+}
+
+
