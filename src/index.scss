@@ -17,6 +17,11 @@
 @use './scss/navigation-override.scss' as naviagtion;
 @use './scss/notification-badge-override.scss' as notification-badge;
 @use './scss/number-input-override.scss' as number-input;
+@use './scss/tootltip-override.scss';
+@use './scss/toggle-group-override.scss';
+@use './scss/timestamp-override.scss';
+@use './scss/textinput-override.scss';
+@use './scss/wizard-override.scss' as wizard;
 @use './scss/pagination-override.scss' as pagination;
 @use './scss/popover-override.scss' as popover;
 @use './scss/skeleton-override.scss' as skeleton;

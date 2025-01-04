@@ -1,0 +1,5 @@
+//   ------------ component level override ---------------
+.pf-v6-c-timestamp {
+    --pf-v6-c-timestamp--Color: var(--rh-color-text-primary, #151515);
+    --pf-v6-c-timestamp--FontSize: var( --rh-font-size-body-text-md, 1rem)
+}

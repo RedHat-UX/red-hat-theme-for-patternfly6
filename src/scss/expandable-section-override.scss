@@ -1,7 +1,7 @@
 $expandable-section: (
-        --pf-t--global--background--color--600: transparent
+  // --pf-t--global--background--color--600: transparent Commmented to avoid style leakage
 );
 
 .pf-v6-c-button:hover, .pf-v6-c-button:focus {
-  --pf-v6-c-button--BackgroundColor: transparent;
+  // --pf-v6-c-button--BackgroundColor: transparent; // Commenting as this style has to be applied inside parent class
 }

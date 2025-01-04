@@ -1,7 +1,7 @@
 $pagination:(
-        --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0)
+  // --pf-t--global--border--radius--200: var(--rh-border-radius-sharp, 0) commented to avoid style leakage
 );
 
 .pf-v6-c-form-control::before{
-  --pf-v6-c-form-control--before--BorderRadius: var(--rh-border-radius-sharp, 0);
+    --pf-v6-c-form-control--before--BorderRadius: var(--rh-border-radius-sharp, 0);
 }

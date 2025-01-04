@@ -1,0 +1,4 @@
+//   ------------ component level override ---------------
+.pf-v6-c-tooltip {
+    --pf-v6-c-tooltip__content--BorderRadius: var(--rh-border-radius-default, 3px);
+}
