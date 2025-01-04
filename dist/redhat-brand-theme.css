@@ -1034,14 +1034,28 @@
   --pf-v6-c-wizard__footer--BorderBlockStartColor: transparent;
 }
 
+.pf-v6-c-form-control::before {
+  --pf-v6-c-form-control--before--BorderRadius: var(--rh-border-radius-sharp, 0);
+}
+
+.pf-v6-c-popover__content {
+  --pf-v6-c-popover__content--BorderRadius: var(--rh-border-radius-sharp, 0);
+}
+
+.pf-v6-c-skeleton {
+  --pf-v6-c-popover__content--BorderRadius: var(--rh-border-radius-sharp, 0);
+}
+
+.pf-v6-c-modal-box {
+  --pf-v6-c-modal-box--BorderRadius: var(--rh-border-radius-sharp, 0px);
+}
+
 :root {
-  --pf-t--global--border--radius--300: var(--rh-border-radius-sharp, 0px);
   --pf-t--global--border--color--100: #d2d2d2;
   --pf-t--global--border--radius--medium: var(--rh-border-radius-sharp, 0);
   --pf-t--global--background--color--600: var(--rh-color-surface-lightest, #ffffff);
   --pf-t--global--background--color--action--plain--default: var(--rh-color-surface-lightest, #ffffff);
-  --pf-t--global--border--radius--300: var(--rh-border-radius-default, 3px);
-  --pf-t--global--background--color--600: transparent;
+  --pf-t--global--border--radius--400: var(--rh-border-radius-default, 0px);
 }
 
 /*# sourceMappingURL=redhat-brand-theme.css.map */

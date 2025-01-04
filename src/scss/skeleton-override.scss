@@ -1,0 +1,6 @@
+$skeleton: (
+  // --pf-t--global--spacer--200: var(--rh-border-radius-sharp, 0) commented to prevent style leakage
+);
+.pf-v6-c-skeleton{
+    --pf-v6-c-popover__content--BorderRadius:  var(--rh-border-radius-sharp, 0);
+}

@@ -1,0 +1,6 @@
+$popover: (
+  //--pf-t--global--border--radius--300:  var(--rh-border-radius-sharp, 0) commented as the variable is already overriden
+);
+.pf-v6-c-popover__content{
+    --pf-v6-c-popover__content--BorderRadius:  var(--rh-border-radius-sharp, 0);
+}

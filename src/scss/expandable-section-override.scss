@@ -1,5 +1,5 @@
 $expandable-section: (
-        --pf-t--global--background--color--600: transparent
+  // --pf-t--global--background--color--600: transparent Commmented to avoid style leakage
 );
 
 .pf-v6-c-button:hover, .pf-v6-c-button:focus {

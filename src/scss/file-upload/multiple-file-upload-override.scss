@@ -1,6 +1,6 @@
 //   ------------ root level override ---------------
 $multiple-file-upload:(
-    --pf-t--global--border--radius--300: var(--rh-border-radius-sharp, 0px)
+  // --pf-t--global--border--radius--300: var(--rh-border-radius-sharp, 0px) commented to avoid style leakage
 );
 
 //   ------------ component level override ---------------
