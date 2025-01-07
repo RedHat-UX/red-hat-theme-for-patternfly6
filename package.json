@@ -1,6 +1,6 @@
 {
   "name": "redhat-brand-theme",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "RHDS theme for Patternfly components",
   "main": "dist/redhat-brand-theme.css",
   "module": "dist/redhat-brand-theme.css",
