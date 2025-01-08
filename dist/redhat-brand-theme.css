@@ -1043,7 +1043,7 @@
 }
 
 .pf-v6-c-skeleton {
-  --pf-v6-c-popover__content--BorderRadius: var(--rh-border-radius-sharp, 0);
+  --pf-v6-c-skeleton--BorderRadius: var(--rh-border-radius-sharp, 0);
 }
 
 .pf-v6-c-modal-box {
