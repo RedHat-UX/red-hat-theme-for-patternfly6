@@ -780,13 +780,62 @@
   --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
   --pf-v6-c-button--m-control--BorderRadius: var(--rh-border-radius-sharp, 0px);
   --pf-v6-c-button--m-control--BorderColor: transparent;
-  --pf-v6-c-button--m-tertiary--BorderColor: #151515;
-  --pf-v6-c-button--m-tertiary--Color: #151515;
+  --pf-v6-c-button--m-tertiary--BorderColor: var(--rh-color-border-strong-on-light, #151515);
+  --pf-v6-c-button--m-tertiary--Color: var(--rh-color-text-primary-on-light, #151515);
+  --pf-v6-c-button--disabled--Color: #6a6e73;
+  --pf-v6-c-button--disabled--BackgroundColor: #d2d2d2;
+  --pf-v6-c-button--PaddingBlockStart: var(--rh-space-sm, 6px);
+  --pf-v6-c-button--PaddingBlockEnd: var(--rh-space-sm, 6px);
+  --pf-v6-c-button--PaddingInlineStart: var(--rh-space-lg, 16px);
+  --pf-v6-c-button--PaddingInlineEnd: var(--rh-space-lg, 16px);
+  --pf-v6-c-button--FontSize: var(--rh-font-size-body-text-md, 1rem);
+}
+.pf-v6-c-button.pf-m-plain {
+  --pf-v6-c-button--m-plain--Color: #6a6e73;
+  --pf-v6-c-button--m-plain__icon--Color: #6a6e73;
+}
+.pf-v6-c-button.pf-m-link.pf-m-inline, .pf-v6-c-button.pf-m-link.pf-m-inline:disabled {
+  --pf-v6-c-button--FontSize: var(--rh-font-size-code-md, 1rem);
+}
+.pf-v6-c-button.pf-m-link.pf-m-inline.pf-m-aria-disabled, .pf-v6-c-button.pf-m-link.pf-m-inline:disabled.pf-m-aria-disabled {
+  color: #6a6e73;
+}
+.pf-v6-c-button.pf-m-link.pf-m-aria-disabled {
+  --pf-v6-c-button--disabled--BackgroundColor: transparent;
+}
+.pf-v6-c-button.pf-m-link:disabled {
+  --pf-v6-c-button--disabled--BackgroundColor: transparent;
+  --pf-v6-c-button--disabled--Color: #6a6e73;
+}
+.pf-v6-c-button.pf-m-control:disabled {
+  --pf-v6-c-button--disabled--BackgroundColor: #f0f0f0;
+  border: var(--rh-border-width-sm, 1px) solid #f0f0f0;
+}
+.pf-v6-c-button.pf-m-control {
+  border: var(--rh-border-width-sm, 1px) solid #f0f0f0;
+  border-bottom-color: #8a8d90;
+}
+.pf-v6-c-button.pf-m-display-lg {
+  --pf-v6-c-button--FontWeight: var(--rh-font-weight-body-text-medium, 500);
+  --pf-v6-c-button--FontSize: var(--rh-font-size-code-md, 1rem);
+}
+.pf-v6-c-button .pf-v6-c-badge.pf-m-disabled, .pf-v6-c-button .pf-v6-c-badge.pf-m-read {
+  --pf-v6-c-badge--Color: var(--rh-color-text-primary-on-light, #151515);
+  --pf-v6-c-badge--BackgroundColor: #f0f0f0;
+  --pf-v6-c-badge--BorderWidth: 0px;
 }
 
-.pf-v6-c-button.pf-m-control {
-  border: 1px solid #f0f0f0;
-  border-bottom-color: #8a8d90;
+.pf-v6-theme-dark .pf-v6-c-button {
+  --pf-v6-c-button--m-primary--BackgroundColor: #06c;
+  --pf-v6-c-button--m-primary--Color: #fff;
+  --pf-v6-c-button--m-secondary--Color: #06c;
+  --pf-v6-c-button--m-secondary--hover--BorderColor: #06c;
+  --pf-v6-c-button--m-link--BackgroundColor: transparent;
+  --pf-v6-c-card--BackgroundColor: #000;
+  --pf-v6-c-button--m-secondary--BorderColor: #06c;
+  --pf-v6-c-button--m-secondary--hover--BorderColor: #fe5142;
+  --pf-v6-c-button--m-secondary--m-danger--BorderColor: #fe5142;
+  --pf-v6-c-button--m-secondary--m-danger--Color: #fe5142;
 }
 
 .pf-v6-c-multiple-file-upload {
