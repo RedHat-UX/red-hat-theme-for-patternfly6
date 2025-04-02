@@ -21,14 +21,14 @@ $table: (
   --pf-v6-c-table__sort-indicator--Color: #d2d2d2;
 
   /* Favorite selected state styles */
-  --pf-v6-c-table__favorite--m-favorited--c-button--Color: var(--pf-v5-c-table__favorite--m-favorited--c-button--Color, #f0ab00)
+  --pf-v6-c-table__favorite--m-favorited--c-button--Color: #f0ab00;
 
   /* Compound Expansion icon color styles */
   --pf-v6-c-table__compound-expansion-toggle__button--Color: var(--pf-v5-c-table__compound-expansion-toggle__button--Color, #06c);
   --pf-v6-c-table__compound-expansion-toggle__button--hover--Color: var(--pf-v5-c-table__compound-expansion-toggle__button--hover--Color, #004080);
 
-  // /* Clickable variant styles */
-  // --pf-v6-c-table__tr--m-clickable--hover--BackgroundColor: #ffffff;
+  /* Clickable variant styles */
+  --pf-v6-c-table__tr--m-clickable--hover--BackgroundColor: #ffffff;
 }
 
 /* Nested selectors for table header that need specific overrides */
@@ -79,12 +79,16 @@ $table: (
   background-color: #ffffff;
 }
 
-// /* Selectors for clickable table variants */
-// .pf-v6-c-table tr:where(.pf-v6-c-table__tr).pf-m-clickable:is(:hover, :focus) {
-//   box-shadow: 0 -0.1875rem 0.25rem -0.125rem rgba(3, 3, 3, 0.08),
-//             0 0.1875rem 0.25rem -0.125rem rgba(3, 3, 3, 0.08);
+/* Selectors for nested column header variants */
+.pf-v6-c-table.pf-m-sticky-header > .pf-v6-c-table__thead, .pf-v6-c-table .pf-v6-c-table__thead.pf-m-nested-column-header {
+  border-bottom: 1px solid #ffffff;
+}
 
-//   .pf-v6-c-table tr:where(.pf-v6-c-table__tr) > :where(th, td):first-child {
-//     background-color: #004080;
-//   }
-// }
+/* Selectors for clickable table variants */
+.pf-v6-c-table tr:where(.pf-v6-c-table__tr).pf-m-clickable:is(:hover, :focus) {
+  box-shadow: 0 -2px 4px rgba(21, 21, 21, 0.2), 0 2px 4px rgba(21, 21, 21, 0.2); 
+}
+
+.pf-v6-c-table tr:where(.pf-v6-c-table__tr).pf-m-selected {
+  box-shadow: 0 -2px 4px rgba(21, 21, 21, 0.2), 0 2px 4px rgba(21, 21, 21, 0.2);
+}
