@@ -1091,6 +1091,16 @@
   padding-inline-end: var(--rh-space-md, 8px);
 }
 
+/* Selectors for Editable rows table variant */
+.pf-v6-c-button.pf-m-plain {
+  color: #6a6e73;
+}
+
+/* Selectors for Expandable table variant */
+.pf-v6-c-table__expandable-row.pf-m-expanded {
+  border-bottom: 0;
+}
+
 /* Selectors for compound expandable table variants */
 .pf-v6-c-table__compound-expansion-toggle.pf-m-expanded {
   border-left: var(--rh-length-4xs, 1px) solid #d2d2d2;
