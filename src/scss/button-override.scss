@@ -1,10 +1,81 @@
-//   ------------ root level override ---------------
-$button:(
-    /* --pf-t--global--border--radius--500: var(--rh-border-radius-default, 3px);  commented as label component is using the same*/ 
+// ------------ Root level override ---------------
+$button: (
 );
 
-//   ------------ component level override ---------------
+// ------------ Component level override ---------------
 .pf-v6-c-button {
-    --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
-    //--pf-v6-c-button--m-control--BorderRadius: var(--rh-border-radius-sharp, 0px);
+  --pf-v6-c-button--BorderRadius: var(--rh-border-radius-default, 3px);
+  --pf-v6-c-button--m-attention--BackgroundColor: #c9190b;
+  
+  &.pf-m-danger {
+    --pf-v6-c-button--BackgroundColor: #c9190b;
+
+    &:hover {
+      --pf-v6-c-button--BackgroundColor: #a30000;
+    }
+  }
+
+  &.pf-m-secondary.pf-m-danger {
+    --pf-v6-c-button--Color: #c9190b;
+    --pf-v6-c-button--BackgroundColor: var(--pf-t--color--white, #ffffff);
+
+    &:hover {
+      --pf-v6-c-button--Color: #a30000;
+      --pf-v6-c-button--BackgroundColor: var(--pf-t--color--white, #ffffff);
+      --pf-v6-c-button--BorderColor: #a30000;
+    }
+  }
+
+  &.pf-m-link.pf-m-danger {
+    --pf-v6-c-button--Color: #c9190b;
+    --pf-v6-c-button--BackgroundColor: var(--pf-t--color--white, #ffffff);
+
+    &:hover {
+      --pf-v6-c-button--Color: #a30000;
+      --pf-v6-c-button--BackgroundColor: var(--pf-t--color--white, #ffffff);
+    }
+  }
+
+  &.pf-m-warning {
+    --pf-v6-c-button--BackgroundColor: #f0ab00;
+
+    &:hover {
+      --pf-v6-c-button--BackgroundColor: #c58c00;
+    }
+  }
+
+  &.pf-m-tertiary {
+    --pf-v6-c-button--Color: var(--pf-t--color--gray--95, #151515);
+    --pf-v6-c-button--BorderColor: var(--pf-t--color--gray--95, #151515);
+
+    &:hover {
+      --pf-v6-c-button--Color: var(--pf-t--color--gray--95, #151515);
+    }
+  }
+
+  &.pf-m-attention {
+    --pf-v6-c-button--BackgroundColor: #c9190b;
+
+    &:hover {
+      --pf-v6-c-button--BackgroundColor: #a30000;
+    }
+  }
+
+  &.pf-m-link {
+    background-color: var(--pf-t--color--white, #ffffff);
+  }
+
+  &.pf-m-control {
+    --pf-v6-c-button--BackgroundColor: var(--pf-t--color--white, #ffffff);
+    --pf-v6-c-button--BorderRadius: var(--pf-t--global--border--radius--0, 0);
+    border-bottom: var(--pf-t--global--border--width--100, 1px) solid #8a8d90;
+
+    &:hover {
+      border-bottom: var(--pf-t--global--border--width--100, 1px) solid var(--pf-t--color--blue--50, #0066cc);
+    }
+
+    &:disabled {
+      background-color: #f0f0f0;
+    }
+  }
 }
