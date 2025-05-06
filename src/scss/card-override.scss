@@ -23,7 +23,7 @@ $card: (
 }
 
 .pf-v6-c-card__selectable-actions :is(.pf-v6-c-check__input, .pf-v6-c-radio__input):where(:checked) ~ :is(.pf-v6-c-radio__label, .pf-v6-c-check__label), .pf-v6-c-card.pf-m-selected {
-  --pf-v6-c-card--m-selectable--BorderWidth: --pf-t--global--border--width--100;
+  --pf-v6-c-card--m-selectable--BorderWidth: var(--pf-t--global--border--width--100, 1px);
 }
 
 .pf-v6-c-card.pf-m-clickable:hover {
@@ -35,7 +35,7 @@ $card: (
 }
 
 .pf-v6-c-button.pf-m-link.pf-m-inline {
-  --pf-v6-c-button--disabled--Color: --pf-t--color--gray--60;
+  --pf-v6-c-button--disabled--Color: var(--pf-t--color--gray--60, #4d4d4d);
   --pf-v6-c-button--TextDecorationLine: none;
 }
 
