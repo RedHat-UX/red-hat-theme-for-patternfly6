@@ -774,7 +774,7 @@
 }
 
 .pf-v6-c-card.pf-m-selectable.pf-m-clickable.pf-m-current {
-  --pf-v6-c-card--BorderWidth: --pf-t--global--border--width--100;
+  --pf-v6-c-card--BorderWidth: var(--pf-t--global--border--width--100, 1px);
 }
 
 .pf-v6-c-banner {
