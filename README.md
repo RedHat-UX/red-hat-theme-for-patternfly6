@@ -1,6 +1,6 @@
 # Red Hat Brand Theme
 
-The Red Hat Brand Theme is an ongoing initiative to adapt and standardize the CSS styles of components from [PatternFly](https://www.patternfly.org/) and [PatternFly Elements](https://patternflyelements.org/) to align with the Red Hat Design System. This initiative ensures design and user experience consistency across Red Hat’s digital products, in full alignment with the standards and guidelines established in the [Red Hat Design System](https://ux.redhat.com/).
+The Red Hat Brand Theme is an ongoing initiative to patch the CSS styles of components from [PatternFly](https://www.patternfly.org/) version 6 and [PatternFly Elements](https://patternflyelements.org/) to more closely align with the Red Hat Design System. This initiative ensures design and user experience consistency across Red Hat’s digital experiences, in full alignment with the standards and guidelines established in the [Red Hat Design System](https://ux.redhat.com/).
 
 ## Usage
 
