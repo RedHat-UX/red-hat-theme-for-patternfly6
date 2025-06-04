@@ -17,16 +17,16 @@ $table: (
 
 .pf-v6-c-table {
   /* Header styles */
-  --pf-v6-c-table__thead--cell--FontWeight: var(--pf-v5-c-table__thead--cell--FontWeight, 700);
-  --pf-v6-c-table__thead--cell--FontSize: var(--pf-v5-global--FontSize--sm, 14px);
+  --pf-v6-c-table__thead--cell--FontWeight: var(--rh-font-weight-heading-bold, 700);
+  --pf-v6-c-table__thead--cell--FontSize: var(--rh-font-size-code-sm, 14px);
 
   /* Body styles */
-  --pf-v6-c-table__tbody--cell--PaddingBlockStart: var(--pf-v5-c-table__tbody--cell--PaddingTop, 24px);
-  --pf-v6-c-table__tbody--cell--PaddingBlockEnd: var(--pf-v5-c-table__tbody--cell--PaddingBottom, 24px);
-  --pf-v6-c-table__tbody--cell--FontSize: var(--pf-v5-global--FontSize--md, 16px);
+  --pf-v6-c-table__tbody--cell--PaddingBlockStart: var(--rh-space-xl, 24px);
+  --pf-v6-c-table__tbody--cell--PaddingBlockEnd: var(--rh-space-xl, 24px);
+  --pf-v6-c-table__tbody--cell--FontSize: var(--rh-font-size-code-md, 16px);
 
   /* First and Last child styles styles */
-  --pf-v6-c-table--cell--first-last-child--PaddingInline: var(--pf-v5-c-table--cell--PaddingLeft, 16px);
+  --pf-v6-c-table--cell--first-last-child--PaddingInline: var(--rh-space-lg, 16px);
 
   /* Striped background color styles*/
   --pf-v6-c-table--m-striped__tr--BackgroundColor: var(--rh-color-color-light-gray, #fafafa);
@@ -37,16 +37,13 @@ $table: (
   /* Favorite selected state styles */
   --pf-v6-c-table__favorite--m-favorited--c-button--Color: var(--rh-color-brand-yellow, #f0ab00);
 
-  /* Compound Expansion icon color styles */
-  --pf-v6-c-table__compound-expansion-toggle__button--hover--Color: var(--pf-v5-c-table__compound-expansion-toggle__button--hover--Color, #004080);
-
   /* Clickable variant styles */
-  --pf-v6-c-table__tr--m-clickable--hover--BackgroundColor: var(--pf-t--color--white, #ffffff)
+  --pf-v6-c-table__tr--m-clickable--hover--BackgroundColor: var(--rh-color-canvas-white, #ffffff)
 }
 
 /* Nested selectors for table header that need specific overrides */
 .pf-v6-c-table thead:where(.pf-v6-c-table__thead) {
-  border-bottom: var(--pf-t--global--border--width--100, 1px) solid var(--rh-color-gray-300, #d2d2d2); 
+  border-bottom: var(--rh-border-width-sm, 1px) solid var(--rh-color-gray-300, #d2d2d2); 
 
   .pf-v6-c-table__favorite .pf-v6-c-button {
     --pf-v6-c-button--m-plain__icon--Color: var(--rh-color-gray-700, #6a6e73);
@@ -61,7 +58,7 @@ $table: (
 
   .pf-v6-c-table__expandable-row .pf-v6-c-table__expandable-row-content {
     padding-inline: 0px;
-    padding-block: var(--pf-t--global--spacer--400, 24px);
+    padding-block: var(--rh-space-xl, 24px);
   }
 }
 
@@ -85,7 +82,7 @@ $table: (
 .pf-v6-c-table__compound-expansion-toggle.pf-m-expanded {
   border-left: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
   border-right: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
-  border-bottom: var(--rh-length-4xs, 1px) solid var(--pf-t--color--white, #ffffff);
+  border-bottom: var(--rh-length-4xs, 1px) solid var(--rh-color-canvas-white, #ffffff);
 }
 
 .pf-v6-c-table__compound-expansion-toggle:hover {
@@ -105,13 +102,13 @@ $table: (
 }
 
 .pf-v6-c-table tr:where(.pf-v6-c-table__tr).pf-m-selected {
-  background-color: var(--pf-t--color--white, #ffffff);
+  background-color: var(--rh-color-canvas-white, #ffffff);
 }
 
 /* Selectors for nested column header variants */
 .pf-v6-c-table.pf-m-sticky-header>.pf-v6-c-table__thead,
 .pf-v6-c-table .pf-v6-c-table__thead.pf-m-nested-column-header {
-  border-bottom: var(--pf-t--global--border--width--100, 1px) solid var(--pf-t--color--white, #ffffff);
+  border-bottom: var(--rh-border-width-sm, 1px) solid var(--rh-color-canvas-white, #ffffff);
 }
 
 /* Selectors for clickable table variants */
@@ -130,6 +127,6 @@ $table: (
     left: 0;
     width: 6px;
     height: 73px;
-    background-color: var(--pf-t--color--blue--50, #0066cc);
+    background-color: var(--rh-color-blue-50, #0066cc);
   }
 }
