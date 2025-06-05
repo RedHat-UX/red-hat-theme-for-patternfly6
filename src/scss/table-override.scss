@@ -1,5 +1,4 @@
-$table: (
-);
+/*** Commented out all the style overrides **/
 
 :root {
   // --rh-color-light-gray: #fafafa;
@@ -80,6 +79,9 @@ $table: (
 
 /* Selectors for compound expandable table variants */
 .pf-v6-c-table__compound-expansion-toggle.pf-m-expanded {
+  border-left-width: var(--rh-length-4xs, 1px);
+  border-bottom-width: var(--rh-length-4xs, 1px);
+  border-right-width: var(--rh-length-4xs, 1px);
   // border-left: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
   // border-right: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
   // border-bottom: var(--rh-length-4xs, 1px) solid var(--rh-color-canvas-white, #ffffff);
@@ -88,6 +90,8 @@ $table: (
 .pf-v6-c-table__compound-expansion-toggle:hover {
   // border-left: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
   // border-right: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
+  border-left-width: var(--rh-length-4xs, 1px);
+  border-right-width: var(--rh-length-4xs, 1px);
 }
 
 /* Nested selectors for specific overrides */
@@ -109,6 +113,7 @@ $table: (
 .pf-v6-c-table.pf-m-sticky-header>.pf-v6-c-table__thead,
 .pf-v6-c-table .pf-v6-c-table__thead.pf-m-nested-column-header {
   // border-bottom: var(--rh-border-width-sm, 1px) solid var(--rh-color-canvas-white, #ffffff);
+  border-bottom-width: var(--rh-length-4xs, 1px);
 }
 
 /* Selectors for clickable table variants */
