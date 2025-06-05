@@ -1046,20 +1046,6 @@
   --pf-v6-c-skeleton--BorderRadius: var(--rh-border-radius-sharp, 0);
 }
 
-:root {
-  --rh-color-light-gray: #fafafa;
-  --rh-color-gray-300: #d2d2d2;
-  --rh-color-brand-yellow: #f0ab00;
-  --rh-color-gray-700: #6a6e73;
-}
-
-:root:where(.pf-v6-theme-dark) {
-  --rh-color-light-gray: #fafafa;
-  --rh-color-gray-300: #d2d2d2;
-  --rh-color-brand-yellow: #f0ab00;
-  --rh-color-gray-700: #6a6e73;
-}
-
 .pf-v6-c-table {
   /* Header styles */
   --pf-v6-c-table__thead--cell--FontWeight: var(--rh-font-weight-heading-bold, 700);
@@ -1071,27 +1057,13 @@
   /* First and Last child styles styles */
   --pf-v6-c-table--cell--first-last-child--PaddingInline: var(--rh-space-lg, 16px);
   /* Striped background color styles*/
-  --pf-v6-c-table--m-striped__tr--BackgroundColor: var(--rh-color-color-light-gray, #fafafa);
   /* Sort indicator color styles*/
-  --pf-v6-c-table__sort-indicator--Color: var(--rh-color-gray-300, #d2d2d2);
   /* Favorite selected state styles */
-  --pf-v6-c-table__favorite--m-favorited--c-button--Color: var(--rh-color-brand-yellow, #f0ab00);
   /* Clickable variant styles */
-  --pf-v6-c-table__tr--m-clickable--hover--BackgroundColor: var(--rh-color-canvas-white, #ffffff) ;
 }
 
 /* Nested selectors for table header that need specific overrides */
-.pf-v6-c-table thead:where(.pf-v6-c-table__thead) {
-  border-bottom: var(--rh-border-width-sm, 1px) solid var(--rh-color-gray-300, #d2d2d2);
-}
-.pf-v6-c-table thead:where(.pf-v6-c-table__thead) .pf-v6-c-table__favorite .pf-v6-c-button {
-  --pf-v6-c-button--m-plain__icon--Color: var(--rh-color-gray-700, #6a6e73);
-}
-
 /* Nested selectors for table body that need specific overrides */
-.pf-v6-c-table tbody:where(.pf-v6-c-table__tbody) .pf-v6-c-table__favorite .pf-v6-c-button {
-  --pf-v6-c-button--m-plain__icon--Color: var(--rh-color-gray-300, #d2d2d2);
-}
 .pf-v6-c-table tbody:where(.pf-v6-c-table__tbody) .pf-v6-c-table__expandable-row .pf-v6-c-table__expandable-row-content {
   padding-inline: 0px;
   padding-block: var(--rh-space-xl, 24px);
@@ -1104,27 +1076,12 @@
 }
 
 /* Selectors for Editable rows table variant */
-.pf-v6-c-button.pf-m-plain {
-  color: var(--rh-color-gray-700, #6a6e73);
-}
-
 /* Selectors for Expandable table variant */
 .pf-v6-c-table__expandable-row.pf-m-expanded {
   border-bottom: 0;
 }
 
 /* Selectors for compound expandable table variants */
-.pf-v6-c-table__compound-expansion-toggle.pf-m-expanded {
-  border-left: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
-  border-right: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
-  border-bottom: var(--rh-length-4xs, 1px) solid var(--rh-color-canvas-white, #ffffff);
-}
-
-.pf-v6-c-table__compound-expansion-toggle:hover {
-  border-left: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
-  border-right: var(--rh-length-4xs, 1px) solid var(--rh-color-gray-300, #d2d2d2);
-}
-
 /* Nested selectors for specific overrides */
 .pf-v6-c-table:not(.pf-m-sticky-header) > .pf-m-nested-column-header tr:where(.pf-v6-c-table__tr):not(:last-child) th:where(.pf-v6-c-table__th):not([rowspan]),
 .pf-v6-c-table:not(.pf-m-sticky-header) > .pf-m-nested-column-header tr:where(.pf-v6-c-table__tr):not(:last-child) td:where(.pf-v6-c-table__td):not([rowspan]) {
@@ -1136,16 +1093,7 @@
   padding: 0;
 }
 
-.pf-v6-c-table tr:where(.pf-v6-c-table__tr).pf-m-selected {
-  background-color: var(--rh-color-canvas-white, #ffffff);
-}
-
 /* Selectors for nested column header variants */
-.pf-v6-c-table.pf-m-sticky-header > .pf-v6-c-table__thead,
-.pf-v6-c-table .pf-v6-c-table__thead.pf-m-nested-column-header {
-  border-bottom: var(--rh-border-width-sm, 1px) solid var(--rh-color-canvas-white, #ffffff);
-}
-
 /* Selectors for clickable table variants */
 .pf-v6-c-table tr:where(.pf-v6-c-table__tr).pf-m-clickable:is(:hover, :focus) {
   box-shadow: 0 -0.1875rem 0.25rem -0.125rem rgba(3, 3, 3, 0.08), 0 0.1875rem 0.25rem -0.125rem rgba(3, 3, 3, 0.08);
@@ -1162,7 +1110,6 @@
   left: 0;
   width: 6px;
   height: 73px;
-  background-color: var(--rh-color-blue-50, #0066cc);
 }
 
 :root {
